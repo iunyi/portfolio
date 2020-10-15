@@ -1,0 +1,142 @@
+.stickers {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100vw;
+  background-color: transparent;
+
+  .wrapper {
+    position: relative;
+    height: 200vh;
+    width: 100%;
+  }
+
+  &_bubble {
+    display: none;
+
+    @include desktop {
+      display: block;
+      position: absolute;
+      top: 190px;
+      right: 80px;
+      width: 150px;
+      height: 150px;
+      transition: all 0.5s ease;
+
+      &_1,
+      &_2,
+      &_3 {
+        position: absolute;
+        top: 0;
+        z-index: 998;
+      }
+
+      &_1 {
+        position: absolute;
+        top: 30px;
+        left: -5px;
+        z-index: 998;
+      }
+
+      &_2 {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        width: 100px;
+      }
+
+      &_3 {
+        position: absolute;
+        top: 24px;
+        left: 30px;
+        width: 50px;
+      }
+    }
+  }
+
+  &_envelope {
+    display: none;
+
+    @include tablet {
+      display: block;
+      position: absolute;
+      top: 1000px;
+      left: 60px;
+      width: 130px;
+      height: 130px;
+      transition: all 0.5s ease;
+
+      &_1,
+      &_2 {
+        position: absolute;
+        top: 0;
+      }
+
+      &_2 {
+        position: absolute;
+        top: 70px;
+        left: 40px;
+      }
+    }
+  }
+
+  &_hover {
+    display: none;
+
+    @include tablet {
+      display: block;
+      position: absolute;
+      top: 330px;
+      left: 50px;
+      width: 130px;
+      height: 130px;
+      transition: all 0.3s ease;
+      z-index: 999;
+
+      &_1,
+      &_2,
+      &_3 {
+        position: absolute;
+        bottom: 0;
+        z-index: 998;
+      }
+
+      &_1 {
+        top: 30px;
+        left: 90px;
+        z-index: 999;
+      }
+
+      &_2 {
+        top: -15px;
+        left: 15px;
+      }
+    }
+  }
+
+  &_profile {
+    position: absolute;
+    top: 15vh;
+    left: 55%;
+    width: 100px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+    z-index: 999;
+
+    @media all and(max-width:440px) {
+      top: 15px;
+      left: 75%;
+      width: 60px;
+    }
+
+    @include tablet {
+      top: 10vh;
+      left: 36%;
+    }
+
+    @include desktop {
+      top: 10vh;
+      left: 25%;
+    }
+  }
+}

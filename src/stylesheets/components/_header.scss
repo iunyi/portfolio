@@ -1,0 +1,62 @@
+// Mobile
+.mobile_header {
+  @include flex_center;
+  height: 15vh;
+
+  &-menu {
+    position: relative;
+    font-size: 24px;
+    font-weight: 100;
+    z-index: 1000;
+    display: flex;
+
+    .hamburger-react {
+      position: relative;
+      top: -20px;
+      left: -20px;
+    }
+
+    .menu_displayed {
+      font-size: 16px;
+      position: relative;
+      top: 20px;
+      left: -24px;
+      line-height: 28px;
+
+      li {
+        transition: all 0.5s ease;
+
+        &:hover {
+          cursor: pointer;
+          color: $color-primary;
+        }
+      }
+    }
+  }
+}
+
+// Desktop
+.desktop_header {
+  @include flex_center;
+  .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+  }
+
+  &-menu {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      padding: 32px 48px;
+      transition: all 0.5s ease;
+      font-size: 20px;
+
+      &:hover {
+        cursor: pointer;
+        color: $color-primary;
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.about {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background-color: #ffffff;
+  background-image: url('https://www.transparenttextures.com/patterns/retina-dust.png');
+  padding-top: 300px;
+
+  .wrapper {
+    padding: 0;
+    overflow: hidden;
+
+    @include tablet {
+      position: relative;
+    }
+  }
+
+  &_image {
+    width: 360px;
+
+    &-image {
+      width: 100%;
+    }
+  }
+
+  &_info {
+    position: relative;
+    top: -32px;
+
+    @include tablet {
+      top: 0px;
+      padding-right: 300px;
+      transform: translate(300px, -80px);
+
+      .below {
+        display: block;
+      }
+    }
+
+    @include desktop {
+      padding-right: 520px;
+      transform: translate(300px, -80px);
+    }
+
+    &-title-1 {
+      color: $color_neutral;
+      line-height: 48px;
+      font-size: 48px;
+      font-weight: 400;
+      padding-bottom: 32px;
+    }
+
+    &-title-2 {
+      color: $color_neutral;
+      line-height: 32px;
+      font-size: 32px;
+      font-weight: 400;
+      padding-bottom: 32px;
+    }
+
+    &-paragraph {
+      margin-bottom: 32px;
+
+      &:first-of-type {
+        padding-top: 32px;
+        border-top: 10px solid $color-neutral;
+      }
+
+      p {
+        margin-bottom: 16px;
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.cursor {
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.cursor-1 {
+  width: 30px;
+  height: 30px;
+  background-color: transparentize($color-tertiary, 0.8);
+}
+
+.cursor-2 {
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;
+  background-color: transparentize($color-highlight, 0.8);
+}

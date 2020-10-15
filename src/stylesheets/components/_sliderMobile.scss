@@ -1,0 +1,63 @@
+.slider_mobile {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 530px;
+  position: relative;
+  top: 40px;
+
+  &-slide {
+    min-width: 80%;
+    height: 530px;
+    padding: 8px;
+    margin: 0 16px;
+    background: linear-gradient(transparentize($color-dark, 0.9), transparent);
+    border-radius: 24px;
+
+    .mobile_project-image {
+      padding: 8px;
+      height: 25%;
+      object-fit: cover;
+      border-radius: 24px;
+      margin: auto;
+    }
+
+    .mobile_project-title {
+      height: 15%;
+      font-size: 24px;
+      color: $color-neutral;
+      padding: 16px;
+      margin-bottom: 8px;
+    }
+
+    .mobile_project-description {
+      color: $color-neutral;
+      height: 44%;
+      font-size: 16px;
+      padding: 16px;
+      margin-bottom: 10px;
+    }
+
+    .mobile_project-buttons {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 0 16px;
+
+      .button-github,
+      .button-website {
+        width: 100px;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: $color-light;
+        background-color: $color-primary;
+        padding: 8px;
+        border-radius: 8px;
+        border: none;
+
+        &:hover {
+          background-color: $color-secondary;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.projects {
+  display: flex;
+  justify-content: space-between;
+  height: 70vh;
+  width: 100%;
+  align-items: center;
+  position: absolute;
+  transform: translateY(-60%);
+  z-index: 0;
+
+  @media all and(min-height: 900px) {
+    max-height: 40vh;
+  }
+
+  @include tablet {
+    transform: translateY(-50%);
+  }
+
+  .projects_wrapper {
+    box-sizing: border-box;
+    margin-right: 0;
+    margin-left: 0;
+    transition: 1s;
+    height: 430px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+
+    @include tablet {
+      height: 530px;
+    }
+  }
+}

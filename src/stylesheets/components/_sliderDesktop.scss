@@ -1,0 +1,204 @@
+// Flip card
+.flip {
+  position: relative;
+  width: 250px;
+  height: 250px;
+
+  &_card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+
+    &:hover > .flip_card-front {
+      transform: perspective(2000px) rotateY(-180deg);
+    }
+
+    &:hover > .flip_card-back {
+      transform: perspective(2000px) rotateY(0deg);
+    }
+
+    &-front {
+      @include flex_center;
+      position: absolute;
+      width: 100%;
+      height: 330px;
+      backface-visibility: hidden;
+      border-radius: 24px;
+      overflow: hidden;
+      transform: perspective(2000px) rotateY(0deg);
+      transition: transform 0.4s linear;
+
+      @include tablet {
+        height: 430px;
+      }
+
+      .front_image {
+        position: relative;
+
+        @include tablet {
+          height: 70%;
+        }
+      }
+    }
+
+    &-back {
+      position: absolute;
+      width: 100%;
+      height: 330px;
+      backface-visibility: hidden;
+      transform: perspective(2000px) rotateY(180deg);
+      border-radius: 24px;
+      overflow: hidden;
+      transition: transform 0.4s linear;
+
+      @include tablet {
+        height: 430px;
+      }
+
+      .back_content {
+        &-image {
+          width: 100%;
+          height: 330px;
+          filter: brightness(20%);
+
+          @include tablet {
+            height: 430px;
+          }
+        }
+
+        &-details {
+          position: absolute;
+          bottom: 50%;
+          min-width: 100%;
+          color: $color-light;
+          padding: 50px;
+          transform: translateY(40%);
+
+          .details_name {
+            font-family: $font-title;
+            font-weight: 400;
+            font-size: 20px;
+            color: $color-light;
+            text-align: left;
+
+            @include tablet {
+              font-size: 32px;
+            }
+          }
+
+          .details_language {
+            font-size: 8px;
+            font-weight: 100;
+            color: $color-neutral-light;
+            text-align: left;
+
+            @include tablet {
+              font-size: 16px;
+              margin-bottom: 5px;
+            }
+          }
+
+          .details_description {
+            font-size: 16px;
+            line-height: 24px;
+            color: $color-background;
+            text-align: left;
+
+            @include tablet {
+              font-size: 16px;
+              line-height: 28px;
+              margin-bottom: 20px;
+            }
+          }
+
+          .details_buttons-github,
+          .details_buttons-website {
+            display: inline-block;
+            width: 130px;
+            text-transform: uppercase;
+            font-size: 16px;
+            color: $color-light;
+            background-color: $color-primary;
+            border: none;
+            border-radius: 8px;
+            padding: 10px;
+            margin-right: 20px;
+
+            &:hover {
+              background-color: $color-secondary;
+            }
+          }
+        }
+
+        &-icon {
+          width: 70px;
+          height: 70px;
+          position: absolute;
+          z-index: 999;
+          bottom: 10%;
+          right: 5%;
+          transform: translateX(-50%);
+
+          &:hover {
+            filter: hue-rotate(130deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Slide projects
+.slider {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 330px;
+
+  @include tablet {
+    height: 430px;
+  }
+
+  .slide {
+    height: 330px;
+    min-width: 100%;
+    transition: 1s;
+
+    @include tablet {
+      min-width: 545px;
+      height: 430px;
+      margin-right: 30px;
+    }
+  }
+
+  %button-styles {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 30px -15px transparentize($color-dark, 0.25);
+    color: $color-neutral-light;
+    background-color: $color-background;
+    border: none;
+    transition: 0.5s;
+    z-index: 999;
+
+    &:hover {
+      cursor: pointer;
+      background-color: transparentize($color-dark, 0.7);
+      color: $color-light;
+    }
+  }
+
+  #goLeft {
+    @extend %button-styles;
+    left: 20px;
+  }
+
+  #goRight {
+    @extend %button-styles;
+    right: 20px;
+  }
+}
