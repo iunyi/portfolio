@@ -6,8 +6,6 @@ class Cursor extends Component {
             <>
                 <div className="cursor cursor-1"></div>
                 <div className="cursor cursor-2"></div>
-                <div className="cursor cursor-3"></div>
-                <div className="cursor cursor-4"></div>
             </>
         );
     }

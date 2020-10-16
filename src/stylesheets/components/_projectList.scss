@@ -7,6 +7,7 @@
   position: absolute;
   transform: translateY(-60%);
   z-index: 0;
+  overflow: hidden;
 
   @media all and(min-height: 900px) {
     max-height: 40vh;
