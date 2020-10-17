@@ -9,8 +9,13 @@
     color: $color-neutral-light;
 
     .heart {
-      color: $color-background;
+      cursor: pointer;
+      color: $color-primary;
       animation: heartbeat 1s alternate-reverse infinite;
+
+      &:hover {
+        color: $color-secondary;
+      }
     }
 
     @keyframes heartbeat {

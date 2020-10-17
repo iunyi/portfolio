@@ -3,12 +3,13 @@ import '../stylesheets/App.scss';
 import Header from './Header';
 import Hero from './Hero';
 import ProjectList from './ProjectList';
-import { projectsData } from '../services/projectsData';
 import About from './About';
 import Contact from './Contact';
 import Footer from './Footer';
 import ScrollToTop from './ScrollToTop';
 import Cursor from '../services/Cursor';
+import { projectsData } from '../services/projectsData';
+import getShiba from '../services/getShiba';
 
 class App extends Component {
   constructor(props) {
@@ -18,12 +19,14 @@ class App extends Component {
       cursorX: 0,
       cursorY: 0,
       width: 0,
-      paddingLeft: 0 
+      paddingLeft: 0,
+      shiba: '',
      };
      this.updateWindowWidth = this.updateWindowWidth.bind(this);
      this.setOffsetLeft = this.setOffsetLeft.bind(this);
      this.handleResize = this.handleResize.bind(this);
      this.moveCursor = this.moveCursor.bind(this);
+     this.showLove = this.showLove.bind(this);
   }
 
   componentDidMount(){
@@ -73,6 +76,16 @@ class App extends Component {
     });
   }
 
+  // Shiba
+  showLove() {
+    getShiba().then(shibaData => {
+      this.setState({
+        shiba: shibaData
+      })
+      window.open(this.state.shiba)
+    })
+  }
+
   render() {
     return (
       <div className="App" onMouseMove={this.moveCursor}>
@@ -85,7 +98,7 @@ class App extends Component {
           <ScrollToTop />
           <Cursor />
         </main>
-        <Footer />
+        <Footer showLove={this.showLove}/>
       </div>
     );
   }

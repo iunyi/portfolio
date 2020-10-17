@@ -2,13 +2,12 @@ import React, { Component } from 'react';
 import { FaHeart } from 'react-icons/fa'
 
 class Footer extends Component {
-
   render() {
     return (
       <footer className="footer">
         <div className="wrapper">
           <p className="footer_info">
-            Designed with <FaHeart className="heart" /> by{' '}
+            Designed with <FaHeart className="heart" onClick={this.props.showLove} /> by{' '}
             <a href="https://twitter.com/alejandrodelpzo" className="link">
               @Alejandrodelpzo
             </a>{' '}
