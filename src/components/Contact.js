@@ -23,8 +23,8 @@ class Contact extends Component {
                 Twitter
               </a>{' '}
               or by email at{' '}
-              <a href="mailto:junyiji@gmail.com" className="link">
-                junyiji@gmail.com
+              <a href="mailto:hi@junyi.es" className="link">
+                hi@junyi.es
               </a>
               .
             </p>

@@ -1,15 +1,39 @@
 import React, { Component } from 'react';
-import jun_image from '../images/jun_image.png';
+import jun_image from '../images/jun_image.jpg';
+import video from '../images/jun_video.mp4';
 import Stickers from './Stickers';
 
 class About extends Component {
+  constructor(props) {
+    super(props);
+    this.animateImage = this.animateImage.bind(this);
+    this.stopAnimation = this.stopAnimation.bind(this);
+  }
+
+  animateImage() {
+    const aboutImage = document.querySelector('.about_image-image');
+    const aboutVideo = document.querySelector('.about_image-video');
+    aboutImage.classList.add('hidden');
+    aboutVideo.classList.remove('hidden')
+  }
+
+  stopAnimation() {
+    const aboutImage = document.querySelector('.about_image-image');
+    const aboutVideo = document.querySelector('.about_image-video');
+    aboutVideo.classList.add('hidden')
+    aboutImage.classList.remove('hidden');
+  }
+
   render() {
     return (
       <section className="about" id="about">
         <Stickers />
         <div className="wrapper">
           <div className="about_image">
-            <img className="about_image-image" src={jun_image} alt="Jun" />
+            <img className="about_image-image" src={jun_image} onMouseOver={this.animateImage} alt="Jun" />
+            <video autoPlay muted loop className="about_image-video hidden" onMouseLeave={this.stopAnimation}>
+            <source src={video} type="video/mp4" />
+          </video>
           </div>
           <div className="about_info">
             <h2 className="about_info-title-1 title">

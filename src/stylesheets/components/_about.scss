@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   width: 100vw;
-  background-color: #ffffff;
+  background-color: $color-light;
   background-image: url('https://www.transparenttextures.com/patterns/retina-dust.png');
   padding-top: 300px;
 
@@ -17,15 +17,28 @@
 
   &_image {
     width: 360px;
+    height: 360px;
+
+    @include flex_center;
+    &-image,
+    &-video {
+      width: 100%;
+      border-radius: 8px;
+      filter: sepia(75%);
+    }
 
     &-image {
-      width: 100%;
+      filter: sepia(60%) saturate(50%);
+    }
+
+    &-video {
+      filter: sepia(70%) saturate(30%);
     }
   }
 
   &_info {
     position: relative;
-    top: -32px;
+    top: -72px;
 
     @include tablet {
       top: 0px;

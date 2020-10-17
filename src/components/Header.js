@@ -3,7 +3,6 @@ import Media from 'react-media';
 import { Link } from 'react-scroll';
 import { Twirl as Hamburger } from 'hamburger-react'
 
-
 class Header extends Component {
   constructor(props) {
     super(props);
@@ -17,7 +16,7 @@ class Header extends Component {
 
   render() {
     return (
-      <Media query="(max-width: 768px)">
+      <Media query="(max-width: 767px)">
         {(matches) => {
           return matches ? (
             <header className="mobile_header">

@@ -17,7 +17,7 @@ class Hero extends Component {
               }}
             >
               <li>
-                <a href="mailto:junyiji@gmail.com">
+                <a href="mailto:hi@junyi.es">
                   <BsEnvelope />
                 </a>
               </li>

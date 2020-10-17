@@ -118,12 +118,12 @@
     position: absolute;
     top: 15vh;
     left: 55%;
-    width: 100px;
+    width: 80px;
     object-fit: cover;
     transition: all 0.5s ease;
     z-index: 999;
 
-    @media all and(max-width:440px) {
+    @media all and(max-width:500px) {
       top: 15px;
       left: 75%;
       width: 60px;
@@ -132,6 +132,7 @@
     @include tablet {
       top: 10vh;
       left: 36%;
+      width: 100px;
     }
 
     @include desktop {

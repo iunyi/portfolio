@@ -6,14 +6,14 @@ import Media from 'react-media';
 class Projects extends Component {
   render() {
     return (
-      <Media query="(max-width: 768px)">
+      <Media query="(max-width: 767px)">
         {(matches) => {
           return matches ? (
             <section className="projects" id="projects">
               <SliderMobile projects={this.props.projects} />
             </section>
           ) : (
-            <section className="projects" id="projects">
+            <section className="projects overflow_hidden" id="projects">
               <div className="projects_wrapper">
                 <SliderDesktop
                   projects={this.props.projects}

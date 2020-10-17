@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  position: relative;
   width: 100vw;
   background-color: #292929;
   background-image: url('https://www.transparenttextures.com/patterns/egg-shell.png');
@@ -43,7 +44,7 @@
     font-size: 48px;
     line-height: 48px;
     font-weight: 400;
-    margin: 72px 0 32px;
+    margin: 48px 0 32px;
 
     @include tablet {
       font-size: 80px;
@@ -74,7 +75,7 @@
       margin-bottom: 8px;
 
       .required {
-        color: $color-tertiary;
+        color: $color-primary;
       }
     }
 
@@ -116,6 +117,7 @@
       font-weight: 700;
       background-color: $color-primary;
       border-radius: 8px;
+      border: none;
       margin-bottom: 92px;
 
       &:hover {

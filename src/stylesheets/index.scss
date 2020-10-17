@@ -22,6 +22,10 @@ body {
 
 button {
   cursor: none;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .wrapper {
@@ -66,4 +70,8 @@ button {
 
 .hidden {
   display: none;
+}
+
+.overflow_hidden {
+  overflow: hidden;
 }
