@@ -1,14 +1,24 @@
 import React, { Component } from 'react';
-import video from '../images/contact.mp4';
+import Media from 'react-media';
+import contactImage from '../images/contact.png'
+import video from '../videos/contact.mp4';
 
 class Contact extends Component {
   render() {
     return (
       <section className="contact" id="contact">
         <div className="contact_top">
-          <video autoPlay muted loop className="contact_top-video">
-            <source src={video} type="video/mp4" />
-          </video>
+          <Media query="(max-width: 767px)">
+            {(matches) => {
+              return matches ? (
+                <img src={contactImage} alt="Jun programming" className="contact_top-image" />
+              ) : (
+                <video autoPlay muted loop className="contact_top-video">
+                  <source src={video} type="video/mp4" />
+                </video>
+              );
+            }}
+          </Media>
         </div>
         <div className="wrapper">
           <div className="contact_bottom">

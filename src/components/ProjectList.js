@@ -13,7 +13,7 @@ class Projects extends Component {
               <SliderMobile projects={this.props.projects} />
             </section>
           ) : (
-            <section className="projects overflow_hidden" id="projects">
+            <section className="projects" id="projects">
               <div className="projects_wrapper">
                 <SliderDesktop
                   projects={this.props.projects}

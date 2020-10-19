@@ -105,11 +105,11 @@
       filter: opacity(1);
     }
 
-    @media all and(min-height:1024px) {
+    @media all and(min-width:1024px) {
       display: flex;
       align-items: center;
       position: relative;
-      top: 25%;
+      top: 10%;
     }
 
     @include desktop {

@@ -12,31 +12,45 @@
     height: 260px;
     width: 100vw;
     overflow: hidden;
-    position: absolute;
+    position: relative;
 
     @include tablet {
       position: relative;
       height: 565px;
     }
 
+    @include desktop {
+      height: 800px;
+    }
+
+    &-image {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      filter: opacity(50%);
+    }
+
     &-video {
-      min-width: 100%;
-      min-height: 100%;
-      filter: brightness(30%);
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      filter: opacity(50%);
     }
   }
 
   .wrapper {
     @include flex_center;
     padding: 0;
+    margin-top: 0;
   }
 
   &_bottom {
     position: relative;
     max-width: 660px;
+    top: -30px;
 
     @include tablet {
-      top: -70px;
+      top: -45px;
     }
   }
 
@@ -44,7 +58,7 @@
     font-size: 48px;
     line-height: 48px;
     font-weight: 400;
-    margin: 48px 0 32px;
+    margin: 0 0 32px;
 
     @include tablet {
       font-size: 80px;
