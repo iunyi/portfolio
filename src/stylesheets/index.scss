@@ -59,9 +59,12 @@ button {
   }
 }
 
+.hover-link {
+  background-color: transparent;
+}
+
 .highlight {
-  font-weight: 100;
-  color: $color-primary;
+  font-weight: 500;
 }
 
 .italic {

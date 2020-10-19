@@ -48,7 +48,7 @@ class About extends Component {
                 <a
                   href="https://www.chinomadrid.com/"
                   alt="Visit Bunkyo's website"
-                  className="link"
+                  className="link pointer"
                 >
                   schools
                 </a>{' '}
@@ -58,7 +58,7 @@ class About extends Component {
                 <a
                   href="https://www.europcar.com/"
                   alt="Visit Bunkyo's website"
-                  className="link"
+                  className="link pointer"
                 >
                   car rental
                 </a>
@@ -78,7 +78,7 @@ class About extends Component {
                 <a
                   href="https://adalab.es/"
                   alt="Visit Bunkyo's website"
-                  className="link"
+                  className="link pointer"
                 >
                   Adalab
                 </a>

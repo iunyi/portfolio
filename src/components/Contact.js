@@ -27,14 +27,14 @@ class Contact extends Component {
               I’m currently looking for a job as a front-end developer but I'm always up for a good talk, if you have any questions just let me know!  You can use the form below to drop me a message or also find me on{' '}
               <a
                 href="https://twitter.com/messages/compose?recipient_id=248802297&text=Aloha!"
-                className="twitter-dm-button link"
+                className="twitter-dm-button link pointer"
                 data-screen-name="@junNeptune"
               >
                 Twitter
               </a>{' '}
               or by email at{' '}
-              <a href="mailto:hi@junyi.es" className="link">
-                hi@junyi.es
+              <a href="mailto:junyiji@gmail.com" className="link pointer">
+                junyiji@gmail.com
               </a>
               .
             </p>
@@ -74,7 +74,7 @@ class Contact extends Component {
                 className="contact_form-input textarea no-autofill-bkg"
                 required
               />
-              <button type="submit" className="contact_form-button">
+              <button type="submit" className="contact_form-button pointer">
                 SEND YOUR MESSAGE
               </button>
             </form>

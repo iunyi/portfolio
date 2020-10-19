@@ -42,15 +42,15 @@ class Header extends Component {
               <div className="wrapper">
                 <nav>
                   <ul className="desktop_header-menu">
-                    <li>
-                      <Link to="projects">Projects</Link>
+                    <li className="pointer">
+                      <Link to="projects" title="projects">Projects</Link>
                     </li>
-                    <li>
+                    <li className="pointer">
                       <Link to="about" title="about">
                         About me
                       </Link>
                     </li>
-                    <li>
+                    <li className="pointer">
                       <Link to="contact" title="contact">
                         Contact
                       </Link>

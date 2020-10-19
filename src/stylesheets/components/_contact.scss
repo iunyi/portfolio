@@ -3,14 +3,12 @@
   align-items: center;
   flex-direction: column;
   position: relative;
-  width: 100vw;
   background-color: #292929;
   background-image: url('https://www.transparenttextures.com/patterns/egg-shell.png');
   color: $color-light;
 
   &_top {
     height: 260px;
-    width: 100vw;
     overflow: hidden;
     position: relative;
 
@@ -135,6 +133,7 @@
       margin-bottom: 92px;
 
       &:hover {
+        cursor: pointer;
         background-color: $color-secondary;
       }
     }

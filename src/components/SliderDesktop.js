@@ -84,7 +84,7 @@ const SliderDesktop = (props) => {
               <p className="details_language">{project.language}</p>
               <p className="details_description">{project.description}</p>
               <div className="details_buttons">
-                <button className="details_buttons-github">
+                <button className="details_buttons-github pointer">
                   <a
                     href={project.url.github}
                     alt="Check repository"
@@ -93,7 +93,7 @@ const SliderDesktop = (props) => {
                     Repository
                   </a>
                 </button>
-                <button className="details_buttons-website">
+                <button className="details_buttons-website pointer">
                   <a
                     href={project.url.website}
                     alt="Check project"
@@ -111,7 +111,7 @@ const SliderDesktop = (props) => {
               ><img
               src={project.image.icon}
               alt={project.name}
-              className="back_content-icon"
+              className="back_content-icon pointer"
             /></a>
             </div>
           </div>
@@ -123,10 +123,10 @@ const SliderDesktop = (props) => {
   return (
     <div className="slider">
       {projectsJSX}
-      <button id="goLeft" onClick={goLeft} className="hidden">
+      <button id="goLeft" onClick={goLeft} className="hidden pointer">
         <IoIosArrowBack />
       </button>
-      <button id="goRight" onClick={goRight}>
+      <button id="goRight" onClick={goRight} className="pointer">
         <IoIosArrowForward />
       </button>
     </div>

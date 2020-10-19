@@ -7,14 +7,14 @@
 }
 
 .cursor-1 {
-  width: 30px;
-  height: 30px;
-  background-color: transparentize($color-tertiary, 0.8);
+  width: 45px;
+  height: 45px;
+  transition: all 0.05s linear;
+  background-color: transparentize($color-tertiary, 0.6);
 }
 
 .cursor-2 {
-  width: 40px;
-  height: 40px;
-  transition: all 0.3s ease;
-  background-color: transparentize($color-highlight, 0.8);
+  width: 30px;
+  height: 30px;
+  background-color: transparentize($color-tertiary, 0.4);
 }

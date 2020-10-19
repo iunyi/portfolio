@@ -17,22 +17,22 @@ class Hero extends Component {
               }}
             >
               <li>
-                <a href="mailto:hi@junyi.es">
+                <a href="mailto:hi@junyi.es" className="pointer">
                   <BsEnvelope />
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/junneptune">
+                <a href="https://twitter.com/junneptune" className="pointer">
                   <FiTwitter />
                 </a>
               </li>
               <li>
-                <a href="https://github.com/iunyi">
+                <a href="https://github.com/iunyi" className="pointer">
                   <FiGithub />
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/iunyi/">
+                <a href="https://www.linkedin.com/in/iunyi/" className="pointer">
                   <FiLinkedin />
                 </a>
               </li>
@@ -42,7 +42,7 @@ class Hero extends Component {
             </h1>
             <p className="subtitle">
               Currently writing code to build cool things!</p>
-            <button>
+            <button className="pointer">
               <a
                 href="https://twitter.com/messages/compose?recipient_id=248802297&text=Aloha!"
                 className="twitter-dm-button"

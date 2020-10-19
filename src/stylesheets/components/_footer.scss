@@ -1,6 +1,5 @@
 .footer {
   @include flex_center;
-  width: 100vw;
   background-color: $color_neutral;
 
   &_info {

@@ -74,6 +74,19 @@ class App extends Component {
       cursor.style.top = this.state.cursorY + 'px' 
       cursor.style.left = this.state.cursorX + 'px'  
     });
+
+    const links = document.querySelectorAll('.pointer');
+    links.forEach(link=> {
+      const cursors = document.querySelectorAll('.cursor');
+      cursors.forEach(cursor => { 
+        link.addEventListener('mouseover', () => {
+          cursor.classList.add('hover-link')
+        });
+        link.addEventListener('mouseleave', () => {
+          cursor.classList.remove('hover-link')
+        });
+      })
+    })
   }
 
   // Shiba
