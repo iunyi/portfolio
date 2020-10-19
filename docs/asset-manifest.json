@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "./static/css/main.2822fe95.chunk.css",
+    "main.js": "./static/js/main.eeea24e6.chunk.js",
+    "main.js.map": "./static/js/main.eeea24e6.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.916853f0.js",
+    "runtime-main.js.map": "./static/js/runtime-main.916853f0.js.map",
+    "static/js/2.d6056ce5.chunk.js": "./static/js/2.d6056ce5.chunk.js",
+    "static/js/2.d6056ce5.chunk.js.map": "./static/js/2.d6056ce5.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.a96f71436b032d837924da9b529b6b71.js": "./precache-manifest.a96f71436b032d837924da9b529b6b71.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.2822fe95.chunk.css.map": "./static/css/main.2822fe95.chunk.css.map",
+    "static/js/2.d6056ce5.chunk.js.LICENSE.txt": "./static/js/2.d6056ce5.chunk.js.LICENSE.txt",
+    "static/media/contact.png": "./static/media/contact.3d5b1d2d.png",
+    "static/media/contact.mp4": "./static/media/contact.46e801b5.mp4",
+    "static/media/drumkit_back.png": "./static/media/drumkit_back.5f387d96.png",
+    "static/media/drumkit_front.png": "./static/media/drumkit_front.3168cb30.png",
+    "static/media/drumkit_icon.gif": "./static/media/drumkit_icon.82ac85ad.gif",
+    "static/media/jake_back.png": "./static/media/jake_back.5fe9a0f6.png",
+    "static/media/jake_front.png": "./static/media/jake_front.cd876749.png",
+    "static/media/jake_icon.gif": "./static/media/jake_icon.925869d4.gif",
+    "static/media/jun_illustration.svg": "./static/media/jun_illustration.c7d57bbf.svg",
+    "static/media/jun_image.jpg": "./static/media/jun_image.273c55f2.jpg",
+    "static/media/jun_video.mp4": "./static/media/jun_video.80772d87.mp4",
+    "static/media/pokemon_back.png": "./static/media/pokemon_back.e6c84580.png",
+    "static/media/pokemon_front.png": "./static/media/pokemon_front.18e42883.png",
+    "static/media/pokemon_icon.gif": "./static/media/pokemon_icon.a6218195.gif",
+    "static/media/rick_back.png": "./static/media/rick_back.7152f8ae.png",
+    "static/media/rick_front.png": "./static/media/rick_front.ce87c673.png",
+    "static/media/rick_icon.gif": "./static/media/rick_icon.d89756c2.gif",
+    "static/media/tv_back.png": "./static/media/tv_back.fee8ff6b.png",
+    "static/media/tv_front.png": "./static/media/tv_front.45a54ddb.png",
+    "static/media/tv_icon.gif": "./static/media/tv_icon.caa4d6c4.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.916853f0.js",
+    "static/js/2.d6056ce5.chunk.js",
+    "static/css/main.2822fe95.chunk.css",
+    "static/js/main.eeea24e6.chunk.js"
+  ]
+}
