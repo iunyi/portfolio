@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Media from 'react-media';
 import jun_image from '../images/jun_image.jpg';
 import video from '../videos/jun_video.mp4';
 import Stickers from './Stickers';
@@ -30,10 +31,20 @@ class About extends Component {
         <Stickers />
         <div className="wrapper">
           <div className="about_image">
-            <img className="about_image-image" src={jun_image} onMouseOver={this.animateImage} alt="Jun" />
-            <video autoPlay muted loop className="about_image-video hidden" onMouseLeave={this.stopAnimation}>
-              <source src={video} type="video/mp4" />
-            </video>
+            <Media query="(max-width: 767px)">
+              {(matches) => {
+                return matches ? ( 
+                  <img className="about_image-image" src={jun_image} alt="Jun" />
+                ) : (
+                  <>
+                    <img className="about_image-image" src={jun_image} onMouseOver={this.animateImage} alt="Jun" />
+                    <video autoPlay muted loop className="about_image-video hidden" onMouseLeave={this.stopAnimation}>
+                      <source src={video} type="video/mp4" />
+                    </video>
+                  </>
+                )
+              }}
+            </Media>
           </div>
           <div className="about_info">
             <h2 className="about_info-title-1 title">

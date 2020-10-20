@@ -15,29 +15,36 @@
   }
 
   &_image {
-    width: 360px;
-    height: 360px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
 
-    @include flex_center;
-    &-image,
-    &-video {
-      width: 100%;
-      border-radius: 8px;
-      filter: sepia(75%);
+    @include tablet {
+      width: 360px;
+      height: 360px;
     }
 
     &-image {
+      width: 100%;
+      border-radius: 8px;
       filter: sepia(70%) saturate(50%);
     }
 
     &-video {
+      width: 100%;
+      border-radius: 8px;
       filter: sepia(70%) saturate(30%);
     }
   }
 
   &_info {
     position: relative;
-    top: -72px;
+    top: -58px;
+
+    @media all and(min-width:400px) {
+      top: -42px;
+    }
 
     @include tablet {
       top: 0px;

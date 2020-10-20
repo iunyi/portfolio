@@ -17,7 +17,7 @@ class Hero extends Component {
               }}
             >
               <li>
-                <a href="mailto:hi@junyi.es" className="pointer">
+                <a href="mailto:junyi@gmail.com" className="pointer">
                   <BsEnvelope />
                 </a>
               </li>

@@ -4,14 +4,14 @@ class SliderMobile extends Component {
   render() {
     const projectsJSX = this.props.projects.map((project, index) => {
       return (
-        <div key={index} className="slider_mobile-slide" style={{ backgroundColor: `${project.color}` }}>
+        <div key={index} className="slider_mobile-slide" style={{ backgroundColor: `${project.color.background}` }}>
           <img
             className="mobile_project-image"
             src={project.image.front}
             alt={project.name}
           />
-          <p className="mobile_project-title title">{project.name}</p>
-          <p className="mobile_project-description">{project.description}</p>
+          <p className="mobile_project-title title" style={{ color: `${project.color.font}`}}>{project.name}</p>
+          <p className="mobile_project-description" style={{ color: `${project.color.font}`}}>{project.description}</p>
           <div className="mobile_project-buttons">
             <button className="button-github">
               <a

@@ -15,7 +15,10 @@ export const projectsData = [
     },
     description:
       'Single-Page App built using React Router. Detailed info of the characters, fetched from an API, can be checked after performing a search. Check out the dimensional portal to see the details of a random character!',
-    color: '#fadaca',
+    color: {
+      background: '#fadaca',
+      font: '#363636'
+    },
   },
  
   {
@@ -33,7 +36,10 @@ export const projectsData = [
     },
     description:
       'Pokémon list fetched from an API using React. Wild Pokémon might appear if you move your mouse cursor over the tall grass.',
-    color: '#EDE9D4',
+    color: {
+      background: '#EDE9D4',
+      font: '#363636'
+    },
   },
   {
     id: 3,
@@ -50,7 +56,10 @@ export const projectsData = [
     },
     description:
       'Use the search engine to render a list of shows matching the words entered. Shows can be saved in a favorite-list. Your list will be saved in the local storage of your web browser. The data is fetched from the TV Maze API using Vanilla JavaScript.',
-    color: '#92BCEA',
+    color: {
+      background: '#92BCEA',
+      font: '#363636'
+    },
   },
   {
     id: 4,
@@ -67,7 +76,10 @@ export const projectsData = [
  },
     description:
       'You are one step closer to becoming a drummer with this virtual drum kit built with Vanilla JavaScript. Play your favorite beats using your own keyboard! ',
-    color: '#F6E08D',
+    color: {
+      background: '#F6E08D',
+      font: '#363636'
+    },
   },
   {
     id: 5,
@@ -84,7 +96,10 @@ export const projectsData = [
     },
     description:
       'It’s always adventure time, but this JavaScript clock shows the current time so that you are not late to your Zoom meetings or so that can water your plants on time!',
-    color: '#337063',
+    color: {
+      background: '#2d6156',
+      font: '#eceaea'
+    },
   },
   {
     id: 6,
@@ -101,6 +116,9 @@ export const projectsData = [
     },
     description:
       'The most invincible opponent has been created so that no one can defeat it by predicting its next move! Rock-paper-scissors game developed with Vanilla JavaScript.',
-    color: '#32373B',
+    color: {
+      background: '#32373B',
+      font: '#eceaea'
+    },
   },
 ];

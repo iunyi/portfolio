@@ -65,7 +65,7 @@ const SliderDesktop = (props) => {
         style={{ transform: `translateX(${x}%)` }}
       >
         <div className="flip_card">
-          <div className="flip_card-front" style={{ backgroundColor: `${project.color}` }}>
+          <div className="flip_card-front" style={{ backgroundColor: `${project.color.background}` }}>
           <img
             src={project.image.front}
             alt={project.name}

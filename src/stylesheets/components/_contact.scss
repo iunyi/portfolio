@@ -44,10 +44,11 @@
 
   &_bottom {
     position: relative;
-    max-width: 660px;
     top: -30px;
+    max-width: 90vw;
 
     @include tablet {
+      max-width: 660px;
       top: -45px;
     }
   }
@@ -123,7 +124,7 @@
     }
 
     &-button {
-      width: 330px;
+      width: 100%;
       height: 70px;
       font-size: 18px;
       font-weight: 700;
@@ -131,6 +132,10 @@
       border-radius: 8px;
       border: none;
       margin-bottom: 92px;
+
+      @include tablet {
+        width: 330px;
+      }
 
       &:hover {
         cursor: pointer;
