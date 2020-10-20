@@ -1,19 +1,19 @@
 .slider_mobile {
   display: flex;
+  align-items: center;
   overflow-x: scroll;
   overflow-y: hidden;
-  height: 530px;
+  height: 550px;
   position: relative;
   top: 40px;
-  // border: 1px solid red;
 
   &-slide {
     min-width: 80%;
     height: 530px;
     padding: 8px;
     margin: 0 16px;
-    background: linear-gradient(transparentize($color-dark, 0.9), transparent);
     border-radius: 24px;
+    box-shadow: 3px 3px 6px transparentize($color-neutral, 0.8);
 
     .mobile_project-image {
       padding: 24px 8px 0px;

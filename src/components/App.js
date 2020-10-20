@@ -25,7 +25,10 @@ class App extends Component {
      this.updateWindowWidth = this.updateWindowWidth.bind(this);
      this.setOffsetLeft = this.setOffsetLeft.bind(this);
      this.handleResize = this.handleResize.bind(this);
+     this.handleCursor = this.handleCursor.bind(this);
+     this.setCursorPosition = this.setCursorPosition.bind(this);
      this.moveCursor = this.moveCursor.bind(this);
+     this.improveLinksVisibilityOnHover = this.improveLinksVisibilityOnHover.bind(this);
      this.showLove = this.showLove.bind(this);
   }
 
@@ -64,17 +67,22 @@ class App extends Component {
   }
 
   // Cursor
-  moveCursor(e) {
+  setCursorPosition(e) {
     this.setState({
       cursorX: e.pageX,
       cursorY: e.pageY
     })
+  }
+
+  moveCursor() {
     const cursors = document.querySelectorAll('.cursor');
     cursors.forEach(cursor => { 
       cursor.style.top = this.state.cursorY + 'px' 
       cursor.style.left = this.state.cursorX + 'px'  
     });
+  }
 
+  improveLinksVisibilityOnHover() {
     const links = document.querySelectorAll('.pointer');
     links.forEach(link=> {
       const cursors = document.querySelectorAll('.cursor');
@@ -89,6 +97,12 @@ class App extends Component {
     })
   }
 
+  handleCursor(e) {
+    this.setCursorPosition(e);
+    this.moveCursor();
+    this.improveLinksVisibilityOnHover();
+  }
+
   // Shiba
   showLove() {
     getShiba().then(shibaData => {
@@ -101,7 +115,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App" onMouseMove={this.moveCursor}>
+      <div className="App" onMouseMove={this.handleCursor}>
         <Header />
         <main>
           <Hero />

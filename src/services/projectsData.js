@@ -84,6 +84,23 @@ export const projectsData = [
     },
     description:
       'It’s always adventure time, but this JavaScript clock shows the current time so that you are not late to your Zoom meetings or so that can water your plants on time!',
-    color: '#2d6156',
+    color: '#337063',
+  },
+  {
+    id: 6,
+    name: 'Rock Paper Scissors',
+    language: 'JavaScript',
+    image: {
+      front: require('../images/projects/rock_front.png'), 
+      back: require('../images/projects/rock_back.png'), 
+      icon: require('../images/projects/rock_icon.gif'),
+    }, 
+    url: {
+      github: 'https://github.com/iunyi/rock-paper-scissors',
+      website: 'https://iunyi.github.io/rock-paper-scissors/',
+    },
+    description:
+      'The most invincible opponent has been created so that no one can defeat it by predicting its next move! Rock-paper-scissors game developed with Vanilla JavaScript.',
+    color: '#32373B',
   },
 ];
