@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "./static/css/main.e81cc874.chunk.css",
-    "main.js": "./static/js/main.e7ee5f24.chunk.js",
-    "main.js.map": "./static/js/main.e7ee5f24.chunk.js.map",
+    "main.css": "./static/css/main.0563b5f7.chunk.css",
+    "main.js": "./static/js/main.3d1404d4.chunk.js",
+    "main.js.map": "./static/js/main.3d1404d4.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.916853f0.js",
     "runtime-main.js.map": "./static/js/runtime-main.916853f0.js.map",
-    "static/js/2.d6056ce5.chunk.js": "./static/js/2.d6056ce5.chunk.js",
-    "static/js/2.d6056ce5.chunk.js.map": "./static/js/2.d6056ce5.chunk.js.map",
+    "static/js/2.c2014391.chunk.js": "./static/js/2.c2014391.chunk.js",
+    "static/js/2.c2014391.chunk.js.map": "./static/js/2.c2014391.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.e2781866f6eb69f049ad505085c393d5.js": "./precache-manifest.e2781866f6eb69f049ad505085c393d5.js",
+    "precache-manifest.9914b2be9aefb6a296dab1e5dd0a8189.js": "./precache-manifest.9914b2be9aefb6a296dab1e5dd0a8189.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.e81cc874.chunk.css.map": "./static/css/main.e81cc874.chunk.css.map",
-    "static/js/2.d6056ce5.chunk.js.LICENSE.txt": "./static/js/2.d6056ce5.chunk.js.LICENSE.txt",
+    "static/css/main.0563b5f7.chunk.css.map": "./static/css/main.0563b5f7.chunk.css.map",
+    "static/js/2.c2014391.chunk.js.LICENSE.txt": "./static/js/2.c2014391.chunk.js.LICENSE.txt",
     "static/media/contact.png": "./static/media/contact.3d5b1d2d.png",
     "static/media/contact.mp4": "./static/media/contact.46e801b5.mp4",
     "static/media/drumkit_back.png": "./static/media/drumkit_back.5f387d96.png",
@@ -29,14 +29,17 @@
     "static/media/rick_back.png": "./static/media/rick_back.7152f8ae.png",
     "static/media/rick_front.png": "./static/media/rick_front.ce87c673.png",
     "static/media/rick_icon.gif": "./static/media/rick_icon.d89756c2.gif",
+    "static/media/rock_back.png": "./static/media/rock_back.7848a86f.png",
+    "static/media/rock_front.png": "./static/media/rock_front.22f77e8c.png",
+    "static/media/rock_icon.gif": "./static/media/rock_icon.e1ba3c5a.gif",
     "static/media/tv_back.png": "./static/media/tv_back.fee8ff6b.png",
     "static/media/tv_front.png": "./static/media/tv_front.45a54ddb.png",
     "static/media/tv_icon.gif": "./static/media/tv_icon.caa4d6c4.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.916853f0.js",
-    "static/js/2.d6056ce5.chunk.js",
-    "static/css/main.e81cc874.chunk.css",
-    "static/js/main.e7ee5f24.chunk.js"
+    "static/js/2.c2014391.chunk.js",
+    "static/css/main.0563b5f7.chunk.css",
+    "static/js/main.3d1404d4.chunk.js"
   ]
 }
