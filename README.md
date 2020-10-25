@@ -163,6 +163,7 @@ const goRight = () => {
    } else {
       setX(x - 100);
    }
+}
 ```
 
 ### 5. Card-Flip Effect
