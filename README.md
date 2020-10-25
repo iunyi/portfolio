@@ -71,9 +71,7 @@ Full documentation [here](https://www.npmjs.com/package/react-media).
 
 ### 2. React Scroll Component
 
-<p align="center" width="100%">
-  <img width="50%" src="./src/images/readme/menu.gif" alt="Internal smooth scrolling menu"/>
-</p>
+![Internal smooth scrolling menu](./src/images/readme/menu.gif)
 
 On the desktop version of the site, there is a menu at the upper right corner that allows the user navigating through the page with a smooth scrolling effect. React Scroll Component was installed to create this effect.
 
