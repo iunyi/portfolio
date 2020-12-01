@@ -43,6 +43,26 @@ export const projectsData = [
   },
   {
     id: 3,
+    name: 'Quiz',
+    language: 'React, TypeScript',
+    image: {
+      front:  require('../images/projects/quiz_front.png'),
+      back:  require('../images/projects/quiz_back.png'),
+      icon: require('../images/projects/quiz_icon.gif'),
+    },
+    url: {
+      github: 'https://github.com/iunyi/quiz',
+      website: 'https://iunyi.github.io/quiz/',
+    },
+    description:
+      'A simple quiz game developed using React and TypeScript where ten random questions with their possible answers are fetched from an API every time the user clicks on the Start button.',
+    color: {
+      background: '#565F76',
+      font: '#eceaea'
+    },
+  },
+  {
+    id: 4,
     name: 'TV Show Finder',
     language: 'JavaScript',
     image: {
@@ -62,7 +82,7 @@ export const projectsData = [
     },
   },
   {
-    id: 4,
+    id: 5,
     name: 'Ba dum tsss',
     language: 'JavaScript',
     image: {
@@ -82,7 +102,7 @@ export const projectsData = [
     },
   },
   {
-    id: 5,
+    id: 6,
     name: 'Clock',
     language: 'JavaScript',
     image: {
@@ -102,7 +122,7 @@ export const projectsData = [
     },
   },
   {
-    id: 6,
+    id: 7,
     name: 'Rock Paper Scissors',
     language: 'JavaScript',
     image: {
