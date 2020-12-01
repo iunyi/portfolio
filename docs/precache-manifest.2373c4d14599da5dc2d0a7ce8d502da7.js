@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "49fa5be85db18170d8128b8af6b40435",
+    "revision": "dcdfa4748d390562f11ad8d06d3218ad",
     "url": "./index.html"
   },
   {
-    "revision": "6085bb5e412f81c77b71",
+    "revision": "f6cded7f7409c2868c36",
     "url": "./static/css/main.0b942cc0.chunk.css"
   },
   {
-    "revision": "8782c2582a55b0dee3cd",
-    "url": "./static/js/2.e8c1f772.chunk.js"
+    "revision": "7d84f884240904678c27",
+    "url": "./static/js/2.7c990e64.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "./static/js/2.e8c1f772.chunk.js.LICENSE.txt"
+    "url": "./static/js/2.7c990e64.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6085bb5e412f81c77b71",
-    "url": "./static/js/main.fa1f6f95.chunk.js"
+    "revision": "f6cded7f7409c2868c36",
+    "url": "./static/js/main.692dcc60.chunk.js"
   },
   {
     "revision": "610a38b7b5a7cb7b2d5e",
@@ -78,6 +78,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a621819572abeb282e352b1d1d711956",
     "url": "./static/media/pokemon_icon.a6218195.gif"
+  },
+  {
+    "revision": "cc1e3e9d49f4335b339b0ccc01982738",
+    "url": "./static/media/quiz_back.cc1e3e9d.png"
+  },
+  {
+    "revision": "96a3673b5acacf8bf4ccb2e9522c9b01",
+    "url": "./static/media/quiz_front.96a3673b.png"
   },
   {
     "revision": "7152f8aeb19525d7fed4cac11d4cba5d",
