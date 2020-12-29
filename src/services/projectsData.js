@@ -1,6 +1,25 @@
 export const projectsData = [
   {
     id: 1,
+    name: 'Advent of Code 2020',
+    language: 'JavaScript',
+    image: {
+      front:  require('../images/projects/advent_front.png'),
+      back:  require('../images/projects/advent_back.png'),
+      icon: require('../images/projects/advent_icon.gif'),
+    },
+    url: {
+      github: 'https://github.com/iunyi/advent-of-code-2020',
+    },
+    description:
+      'Advent of Code is an Advent calendar of programming puzzles created by Eric Wastl for a variety of skill sets and skill levels that I decided to solve to train my problem solving skills using Javascript.',
+    color: {
+      background: '#181839',
+      font: '#363636'
+    },
+  },
+  {
+    id: 2,
     name: 'Rick & Morty Character Finder',
     language: 'React, JavaScript',
     image: {
@@ -22,7 +41,7 @@ export const projectsData = [
   },
  
   {
-    id: 2,
+    id: 3,
     name: 'Pokemon List',
     language: 'React, JavaScript',
     image: {
@@ -38,25 +57,6 @@ export const projectsData = [
       'Pokémon list fetched from an API using React. Wild Pokémon might appear if you move your mouse cursor over the tall grass.',
     color: {
       background: '#EDE9D4',
-      font: '#363636'
-    },
-  },
-  {
-    id: 3,
-    name: 'Advent of Code 2020',
-    language: 'JavaScript',
-    image: {
-      front:  require('../images/projects/advent_front.png'),
-      back:  require('../images/projects/advent_back.png'),
-      icon: require('../images/projects/advent_icon.gif'),
-    },
-    url: {
-      github: 'https://github.com/iunyi/advent-of-code-2020',
-    },
-    description:
-      'Advent of Code is an Advent calendar of programming puzzles created by Eric Wastl for a variety of skill sets and skill levels that I decided to solve to train my problem solving skills using Javascript',
-    color: {
-      background: '#0F0F23',
       font: '#363636'
     },
   },

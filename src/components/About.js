@@ -121,7 +121,7 @@ class About extends Component {
                 <span className="highlight">Sass</span> and{' '}
                 <span className="highlight">Bootstrap</span> and I like paying
                 attention to details so that I can get a clean and maintainable
-                code.
+                code. I have played around with <span className="highlight">TypeScript</span>, <span className="highlight">Jest</span> and <span className="highlight">Styled Components</span> as well.
               </p>
               <p>
                 I have experience working in <span className="highlight">Agile</span>{' '}
@@ -134,7 +134,7 @@ class About extends Component {
                 Currently, I'm working on improving my development skills by
                 learning new techniques with JavaScript and I aim to growing
                 into a better problem solver. I'm also interested in mobile app
-                development, so I have started learning React Native.
+                development, so I have started learning <span className="highlight">React Native</span>.
               </p>
             </div>
           </div>

@@ -1,27 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dcdfa4748d390562f11ad8d06d3218ad",
+    "revision": "778d5bb7990859627a696b63a5959b5b",
     "url": "./index.html"
   },
   {
-    "revision": "f6cded7f7409c2868c36",
+    "revision": "9e88f5028afd838e606e",
     "url": "./static/css/main.0b942cc0.chunk.css"
   },
   {
-    "revision": "7d84f884240904678c27",
-    "url": "./static/js/2.7c990e64.chunk.js"
+    "revision": "5f0315468188607558b2",
+    "url": "./static/js/2.020bdc18.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "./static/js/2.7c990e64.chunk.js.LICENSE.txt"
+    "url": "./static/js/2.020bdc18.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f6cded7f7409c2868c36",
-    "url": "./static/js/main.692dcc60.chunk.js"
+    "revision": "9e88f5028afd838e606e",
+    "url": "./static/js/main.03300752.chunk.js"
   },
   {
     "revision": "610a38b7b5a7cb7b2d5e",
     "url": "./static/js/runtime-main.916853f0.js"
+  },
+  {
+    "revision": "68052ea1a643053f09f942db5e4a88d5",
+    "url": "./static/media/advent_back.68052ea1.png"
+  },
+  {
+    "revision": "dccda242abe8a716453e487d3405c681",
+    "url": "./static/media/advent_icon.dccda242.gif"
   },
   {
     "revision": "3d5b1d2dc2b893f371ce6ce66fbeb234",
