@@ -15,7 +15,7 @@ export const projectsData = [
       'Advent of Code is an Advent calendar of programming puzzles created by Eric Wastl for a variety of skill sets and skill levels that I decided to solve to train my problem solving skills using Javascript.',
     color: {
       background: '#181839',
-      font: '#363636'
+      font: '#eceaea'
     },
   },
   {

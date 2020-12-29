@@ -21,14 +21,19 @@ class SliderMobile extends Component {
                 Repository
               </a>
             </button>
-            <button className="button-website">
-              <a
-                href={project.url.website}
-                alt="Check project"
-              >
-                Website
-              </a>
-            </button>
+            { 
+              project.url.website ? 
+              (
+                <button className="button-website">
+                  <a
+                    href={project.url.website}
+                    alt="Check project"
+                  >
+                    Website
+                  </a>
+                </button>
+              ) : null
+            }
             </div>
         </div>
       );
