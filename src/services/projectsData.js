@@ -43,6 +43,25 @@ export const projectsData = [
   },
   {
     id: 3,
+    name: 'Advent of Code 2020',
+    language: 'JavaScript',
+    image: {
+      front:  require('../images/projects/advent_front.png'),
+      back:  require('../images/projects/advent_back.png'),
+      icon: require('../images/projects/advent_icon.gif'),
+    },
+    url: {
+      github: 'https://github.com/iunyi/advent-of-code-2020',
+    },
+    description:
+      'Advent of Code is an Advent calendar of programming puzzles created by Eric Wastl for a variety of skill sets and skill levels that I decided to solve to train my problem solving skills using Javascript',
+    color: {
+      background: '#0F0F23',
+      font: '#363636'
+    },
+  },
+  {
+    id: 4,
     name: 'TV Show Finder',
     language: 'JavaScript',
     image: {
@@ -62,7 +81,7 @@ export const projectsData = [
     },
   },
   {
-    id: 4,
+    id: 5,
     name: 'Quiz',
     language: 'React, TypeScript',
     image: {
@@ -82,7 +101,7 @@ export const projectsData = [
     },
   },
   {
-    id: 5,
+    id: 6,
     name: 'Ba dum tsss',
     language: 'JavaScript',
     image: {
@@ -102,7 +121,7 @@ export const projectsData = [
     },
   },
   {
-    id: 6,
+    id: 7,
     name: 'Clock',
     language: 'JavaScript',
     image: {
@@ -122,7 +141,7 @@ export const projectsData = [
     },
   },
   {
-    id: 7,
+    id: 8,
     name: 'Rock Paper Scissors',
     language: 'JavaScript',
     image: {

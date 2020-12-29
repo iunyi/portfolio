@@ -93,15 +93,20 @@ const SliderDesktop = (props) => {
                     Repository
                   </a>
                 </button>
-                <button className="details_buttons-website pointer">
-                  <a
-                    href={project.url.website}
-                    alt="Check project"
-                    className="button"
-                  >
-                    Website
-                  </a>
-                </button>
+                {
+                  project.url.website ?
+                  (
+                    <button className="details_buttons-website pointer">
+                    <a
+                      href={project.url.website}
+                      alt="Check project"
+                      className="button"
+                    >
+                      Website
+                    </a>
+                  </button>
+                  ) : null
+                }
               </div>
             </div>
             <a
